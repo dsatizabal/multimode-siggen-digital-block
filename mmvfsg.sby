@@ -1,0 +1,16 @@
+[tasks]
+cover
+
+[options]
+cover: mode cover
+cover: depth 120
+
+[engines]
+smtbmc
+
+[script]
+read_verilog -formal mmvfsg.v
+prep -top mmvfsg
+
+[files]
+mmvfsg.v
